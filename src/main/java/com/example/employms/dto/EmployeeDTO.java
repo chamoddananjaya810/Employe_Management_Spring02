@@ -1,20 +1,13 @@
-package com.example.employms.entity;
+package com.example.employms.dto;
 
-
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Value;
 
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name="Employee")
-public class Employee {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class EmployeeDTO {
     private int empID;
     private  String empName;
     private  String empAddress;
